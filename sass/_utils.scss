@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Roboto';
+  color: $text_color;
+  font-size: 14px;
+  line-height: 1.14;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+ul,
+li,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: $text_color;
+}
+img {
+  vertical-align: top;
+}
+.container {
+  outline: 1px solid red;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding: 0 16px;
+  }
+}
+.button-icon {
+  background-color: transparent;
+  border: none;
+}
+.button--gren {
+  padding: 6px 18px;
+  border-radius: 30px;
+  min-width: 98px;
+  min-height: 32px;
+
+  border: none;
+  background-color: $accent_coolor;
+  color: $text_color;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+
+  &:hover,
+  &:focus {
+    background-color: $accent_btn-green;
+  }
+}
+.button--border {
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: none;
+  min-width: 98px;
+  min-height: 32px;
+
+  border: 2px solid $border_btn;
+  color: $text_color;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  &:hover,
+  &:focus {
+    border-color: $border_btn-accent;
+  }
+}
+
+// [class*="__titel"] {
+
+// }

@@ -1,0 +1,35 @@
+.nav__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.nav__item {
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 28px;
+    }
+  }
+}
+.nav__item--header {
+  @media screen and (max-width: 767px) {
+    &:hover,
+    &:focus {
+      background-color: $accent_coolor;
+    }
+  }
+}
+.nav__link {
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    padding: 16px 0 16px 16px;
+
+    font-size: 16px;
+    line-height: 1.18;
+  }
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    padding: 20px 0;
+  }
+}

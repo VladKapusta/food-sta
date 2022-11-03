@@ -1,0 +1,123 @@
+.section-subscrib {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 100px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 60px;
+  }
+}
+.subscrib {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.subscrib__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-end;
+  }
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 20px;
+  }
+}
+.subscrib__content {
+  @media screen and (min-width: 768px) {
+    width: 640px;
+  }
+}
+.subscrib__label {
+  margin-bottom: 40px;
+}
+.subscrib__titel {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+  }
+}
+
+.form {
+  display: flex;
+  
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  row-gap: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    column-gap: 20px;
+  }
+}
+
+.form__label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 394px;
+  }
+}
+.form__input {
+  padding: 12px 11px;
+  border: 0.854167px solid;
+  border-radius: 30px;
+
+  font-size: 12px;
+
+  outline: none;
+
+  &:invalid {
+    border-color: red;
+    transition: border-color 250ms linear;
+    ~ .error {
+      opacity: 1;
+    }
+
+  }
+  &:valid {
+    border-color: $border_btn;
+    transition: border-color 250ms linear;
+  }
+  &:placeholder-shown {
+    border-color: $accent_btn-yellow;
+    transition: border-color 250ms linear;
+  }
+}
+.error {
+  position: absolute;
+  left: 12px;
+  bottom: 0;
+  transform: translateY(110%);
+  opacity: 0;
+
+  transition: opacity 250ms linear;
+
+  font-size: 10px;
+  line-height: 150%;
+  color: $eror_color;
+}
+
+.form__button {
+  background-color: $accent_coolor;
+ 
+  border: none;
+  &:hover {
+    background-color: $accent_btn-green;
+  }
+
+  @media screen and (max-width: 767px) {
+    align-self: flex-end;
+  }
+}

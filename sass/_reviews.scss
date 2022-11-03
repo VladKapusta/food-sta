@@ -1,0 +1,99 @@
+.section-reviews {
+  margin-bottom: -50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  background-image: url(../images/bg_image/reviews_mob_320.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  
+  @media screen and (min-width: 340px) {
+    background-image: url(../images/bg_image/reviews-mobail.png);
+    margin-bottom: -65px;
+    padding-bottom: 80px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 120px;
+    background-image: url(../images/bg_image/reviews_tablet.png);
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    background-image: url(../images/bg_image/reviews_desktop.png);
+  }
+}
+.reviews__label {
+  margin-bottom: 32px;
+  > :not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.reviews__titel {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  @media screen and (min-width: 767px) {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+}
+.cards__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.cards__item {
+  padding: 8px;
+  border-radius: 0 30px 30px 30px;
+  background-color: $white;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    padding: 8px;
+    width: calc((100% - 32px) / 2);
+    &:not(:last-child) {
+        margin-right: 32px;
+      }
+  }
+  @media screen and (min-width: 1280px) {
+    width: calc((100% - 246px) / 2);
+    &:not(:last-child) {
+        margin-right: 139px;
+      }
+  }
+}
+.cards__text {
+  margin-top: 28px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.16;
+  @media screen and (max-width: 767px) {
+    max-width: 400px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.16;
+  }
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  column-gap: 16px;
+  border-right: 1px solid $border_btn;
+}
+.avatar__name {
+  margin-bottom: 2px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+}
+.avatar__posit {
+  font-size: 14px;
+  line-height: 150%;
+}

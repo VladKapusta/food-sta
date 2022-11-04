@@ -42,7 +42,7 @@ img {
   vertical-align: top;
 }
 .container {
-  outline: 1px solid red;
+  // outline: 1px solid red;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -91,6 +91,7 @@ img {
 
   border: 2px solid $border_btn;
   color: $text_color;
+  background-color: $white;
   cursor: pointer;
   font-family: inherit;
   font-weight: 500;

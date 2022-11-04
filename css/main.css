@@ -139,6 +139,15 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 0;
+  overflow: hidden;
+}
+.head.is-open {
+  overflow: visible;
+}
+.head.is-open .nav__head {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -163,11 +172,6 @@ img {
     transition: 250ms transform linear, 250ms opacity linear, 250ms -webkit-transform linear;
     border-radius: 30px 0 30px 30px;
     background-color: #FEFEFE;
-  }
-  .nav__head.is-open {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
   }
 }
 @media screen and (min-width: 768px) {
